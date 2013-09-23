@@ -6,6 +6,9 @@ class IncidentView extends Backbone.Marionette.ItemView
     </a>
   """
 
+  onRender: ->
+    @$el.addClass @model.get('type')
+
 class window.IncidentsView extends Backbone.Marionette.CompositeView
   template : templatify """
     <h1>A lot went wrong lately!</h1>
