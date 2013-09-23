@@ -1,0 +1,40 @@
+body {
+  font-family: Helvetica, Lucida, "Segoe UI", Calibri, Verdana, Arial, sans-serif;
+  background: #eee;
+  margin: 0;
+  line-height: 1.25;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#content {
+  font-size:16px;
+  margin: 0 auto;
+  width: 500px;
+}
+
+.incidents {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  width: 100%;
+  background: #f2dede;
+  border: 1px solid #eed3d7;
+  color: #b94a48;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+
+.alert-notice {
+  background: #ddf4fb;
+  border-color: #c6edf9;
+  color: #404040;
+}
+
