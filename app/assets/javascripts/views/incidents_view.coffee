@@ -1,3 +1,10 @@
+class EmptyView extends Backbone.Marionette.ItemView
+  tagName: 'li'
+  className: 'warning'
+  template : templatify """
+    Nothing went wrong. Ever!
+  """
+
 class IncidentView extends Backbone.Marionette.ItemView
   tagName: 'li'
   template : templatify """
@@ -17,3 +24,4 @@ class window.IncidentsView extends Backbone.Marionette.CompositeView
   """
   itemViewContainer: '.incidents'
   itemView: IncidentView
+  emptyView: EmptyView
