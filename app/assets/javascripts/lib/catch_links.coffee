@@ -3,8 +3,7 @@ tryOpenLinkWithBackbone = (routeTo) ->
   Backbone.history.navigate routeTo, false
   unless Backbone.history.loadUrl(routeTo)
     Backbone.history.navigate oldFragment, false
-    window.open routeTo
-    window.focus()
+    window.location = routeTo
 
 $(document).on "click", "a", (e)->
   routeTo = $(e.target).closest("a").attr("href")
